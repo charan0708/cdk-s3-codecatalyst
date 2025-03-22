@@ -22,6 +22,7 @@ Actions:
         - WorkflowSource # This specifies that the action requires this Workflow as a source
     Compute:
       Type: EC2
+      Fleet: Linux.x86-64.Large
     Configuration:
       Region: eu-west-1
       CdkCliVersion: 2.1005.0
