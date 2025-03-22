@@ -18,11 +18,8 @@ class CdkS3Stack(Stack):
         #     self, "CdkS3Queue",
         #     visibility_timeout=Duration.seconds(300),
         # )
-
-        bucket = s3.Bucket(
-            self,
-            "MyS3Bucket",
-            bucket_name="test-bucket",
+        bucket = s3.Bucket(self, "MyS3Bucket",
+            bucket_name="test-tesrt-bucket",
             versioned=True,
             encryption=s3.BucketEncryption.S3_MANAGED,
             block_public_access=s3.BlockPublicAccess.BLOCK_ALL,
